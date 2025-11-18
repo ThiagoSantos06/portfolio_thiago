@@ -1,0 +1,93 @@
+section {
+    display: flex;
+    justify-content: center;
+    padding: 16rem 0;
+    background-color: var(--color-6);
+    transition: all 0.3s;
+}
+
+.color-background {
+    background-color: var(--color-7);
+}
+
+.content-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.apresentation-title {
+    color: var(--color-4);
+    font-size: 4.5rem;
+}
+
+span {
+    color: var(--color-1);
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.apresentation-paragraph {
+    text-align: center;
+    color: var(--color-2);
+    width: 42rem;
+    font-size: 1.5rem;
+}
+
+.button-project {
+    background-color: var(--color-1);
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button-project:hover {
+    background-color: var(--color-5);
+}
+
+.button-contact {
+    border: 1px solid var(--color-8);
+    background-color: white;
+    color: var(--color-3);
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button-contact:hover {
+    background-color: var(--color-1);
+    border: 1px solid var(--color-1);
+    color: var(--color-6);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+.pi-arrow-down {
+    color: var(--color-2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    animation: bounce 1.3s infinite ease-in-out;
+    transition: 0.2s;
+}
+
+.pi-arrow-down:hover {
+    color: var(--color-3);
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './intro.css',
 })
 export class Intro {
+  isScrolled = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
+  }
 }
