@@ -47,6 +47,7 @@ span {
     border-radius: 0.75rem;
     text-decoration: none;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .button-project:hover {
@@ -62,6 +63,7 @@ span {
     border-radius: 0.75rem;
     text-decoration: none;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .button-contact:hover {
