@@ -8,6 +8,18 @@ import { Component, HostListener } from '@angular/core';
 })
 export class Header {
   isScrolled = false;
+  introId = 'intro';
+  aboutId = 'about'
+  projectsId = 'projects';
+  contactId = 'contact';
+  skillsId = 'skills';
+
+  scrollTo(link: string) {
+    const section = document.getElementById(link);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

@@ -1,13 +1,13 @@
 <header [class.header-shadow]="isScrolled">
     <div class="content-header">
-        <h1 class="title-portfolio">Portfolio</h1>
+        <h1 class="title-portfolio" (click)="scrollTo(introId)">Portfolio</h1>
         <nav class="navbar">
             <ul class="list-navbar">
-                <li><a href="#about">Início</a></li>
-                <li><a href="#projects">Sobre</a></li>
-                <li><a href="#contact">Skills</a></li>
-                <li><a href="#contact">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a (click)="scrollTo(introId)">Início</a></li>
+                <li><a (click)="scrollTo(aboutId)">Sobre</a></li>
+                <li><a (click)="scrollTo(skillsId)">Skills</a></li>
+                <li><a (click)="scrollTo(projectsId)">Projetos</a></li>
+                <li><a (click)="scrollTo(contactId)">Contato</a></li>
             </ul>
         </nav>
     </div>
