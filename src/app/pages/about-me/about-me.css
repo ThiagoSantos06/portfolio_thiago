@@ -1,0 +1,37 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.title-about-me {
+    color: var(--color-4);
+    font-size: 3rem;
+}
+
+span {
+    color: var(--color-1);
+}
+
+.content-about-me {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-8);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 50%;
+    gap: 1.5rem;
+    transition: 0.2s;
+}
+
+.content-about-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 10px rgba(109, 109, 109, 0.1);
+}
+
+.paragraph {
+    color: var(--color-2);
+}
