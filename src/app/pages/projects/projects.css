@@ -1,0 +1,121 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.projects-title {
+    font-size: 3rem;
+}
+
+.span-title {
+    color: var(--color-1);
+}
+
+.project-image {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.08);
+}
+
+.portfolio-image {
+    border-bottom: 1px solid var(--color-8);
+}
+
+.content-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-8);
+    border-radius: 1rem;
+    max-width: 400px;
+    transition: 0.2s;
+    overflow: hidden; 
+}
+
+.container-project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 10px rgba(109, 109, 109, 0.1);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.project-text {
+    color: var(--color-4);
+    font-weight: 500;
+}
+
+.span-date {
+    color: var(--color-2);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.project-paragraph {
+    font-weight: 400;
+    color: var(--color-2);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-code {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--color-8);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--color-4);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button-code:hover {
+    background-color: var(--color-1);
+    color: var(--color-6);
+}
+
+.button-site {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color-1);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--color-6);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.button-site:hover {
+    background-color: var(--color-5);
+    color: var(--color-6);
+}
