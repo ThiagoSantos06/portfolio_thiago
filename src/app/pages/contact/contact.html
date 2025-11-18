@@ -1,1 +1,51 @@
-<p>contact works!</p>
+<section id="contact">
+    <h1 class="title-contact">Entre em <span>Contato</span></h1>
+    <div class="content-contact">
+        <p class="paragraph-contact">Estou sempre aberto a novas oportunidades. Vamos conversar sobre como posso ajudar no seu próximo projeto!</p>
+
+        <div class="container-grid">
+            <div class="email-contact" (click)="openLink(email)">
+                <i class="pi pi-envelope"></i>
+                <div class="container-contact">
+                    <h2 class="text-contact">Email</h2>
+                    <p class="paragraph-email">thiagohenrique1983c@gmail.com</p>
+                </div>
+                <div class="content-email">
+                    <i class="pi pi-external-link"></i>
+                </div>
+            </div>
+
+            <div class="linkedin-contact" (click)="openLink(linkedin)">
+                <i class="pi pi-linkedin"></i>
+                <div class="container-contact">
+                    <h2 class="text-contact">LinkedIn</h2>
+                    <p class="paragraph-linkedin">thiagosantos2006</p>
+                </div>
+
+                <div class="content-email">
+                    <i class="pi pi-external-link"></i>
+                </div>
+            </div>
+
+            <div class="github-contact" (click)="openLink(github)">
+                <i class="pi pi-github"></i>
+                <div class="container-contact">
+                    <h2 class="text-contact">GitHub</h2>
+                    <p class="paragraph-github">ThiagoSantos06</p>
+                </div>
+
+                <div class="content-email">
+                    <i class="pi pi-external-link"><a href="" target="_blank"></a></i>
+                </div>
+            </div>
+
+            <div class="curriculum-contact">
+                <i class="pi pi-file"></i>
+                <div class="container-contact">
+                    <h2 class="text-contact">Currículo</h2>
+                    <a href="assets/archives/curriculum.pdf" download="curriculum_Thiago" class="download-curriculum">Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
