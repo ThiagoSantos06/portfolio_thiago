@@ -15,7 +15,7 @@ export class Footer {
   scrollTo(link: string) {
     const section = document.getElementById(link);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

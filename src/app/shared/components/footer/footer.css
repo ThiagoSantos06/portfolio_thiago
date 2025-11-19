@@ -56,3 +56,16 @@ a:hover {
 .rights-text {
     color: var(--color-2);
 }
+
+@media (max-width: 500px) {
+    .content-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .content-links, .content-contact {
+        align-items: center;
+        text-align: center;
+    }
+}
