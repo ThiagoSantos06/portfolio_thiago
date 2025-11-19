@@ -4,7 +4,7 @@ section {
     background-color: var(--color-7);
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     gap: 2rem;
 }
 
@@ -50,4 +50,26 @@ span {
 
 .skill-paragraph {
     color: var(--color-2);
+}
+
+@media (max-width: 1280px) {
+    .content-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 875px) {
+    .content-skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        gap: 1rem;
+    }
+    
+    .skills-title {
+        font-size: 2.5rem;
+    }
 }
