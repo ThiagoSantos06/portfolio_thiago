@@ -119,3 +119,32 @@ section {
     background-color: var(--color-5);
     color: var(--color-6);
 }
+
+@media (max-width: 1335px) {
+    .content-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .content-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        gap: 1rem;
+    }
+
+    .projects-title {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
