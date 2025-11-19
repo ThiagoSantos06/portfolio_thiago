@@ -3,9 +3,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
-    gap: 2rem;
+    padding: 5rem 2rem;
     background-color: var(--color-7);
+    gap: 2rem;
 }
 
 .title-contact {
@@ -43,8 +43,8 @@ span {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     width: 100%;
+    gap: 2rem;
 }
 
 .pi {
@@ -83,6 +83,7 @@ span {
 .paragraph-email, .paragraph-github, .paragraph-linkedin {
     color: var(--color-2);
     font-weight: 500;
+    word-break: break-all;
 }
 
 .download-curriculum {
@@ -94,4 +95,40 @@ span {
 
 .download-curriculum:hover {
     color: var(--color-5);
+}
+
+@media (max-width: 1024px) {
+    section {
+        gap: 1rem;
+    }
+
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-contact {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .email-contact, .github-contact, .linkedin-contact, .curriculum-contact {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .container-grid {
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .title-contact {
+        font-size: 2.5rem;
+    }
+
+    .paragraph-contact {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
