@@ -14,7 +14,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .apresentation-title {
@@ -26,12 +26,6 @@ span {
     color: var(--color-1);
 }
 
-.buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
 .apresentation-paragraph {
     text-align: center;
     color: var(--color-2);
@@ -39,7 +33,15 @@ span {
     font-size: 1.5rem;
 }
 
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
 .button-project {
+    display: flex;
+    align-items: center;
     background-color: var(--color-1);
     color: #fff;
     font-weight: 500;
@@ -55,6 +57,8 @@ span {
 }
 
 .button-contact {
+    display: flex;
+    align-items: center;
     border: 1px solid var(--color-8);
     background-color: white;
     color: var(--color-3);
@@ -92,4 +96,60 @@ span {
 
 .pi-arrow-down:hover {
     color: var(--color-3);
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 19rem 0;
+    }
+
+    .content-intro {
+        gap: 1rem;
+    }
+    
+    .apresentation-title {
+        font-size: 2.5rem;
+    }
+
+    .apresentation-paragraph {
+        width: 30rem;
+        font-size: 1rem;
+    }
+
+    .button-project {
+        font-weight: 400;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .button-contact {
+        font-weight: 400;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .pi-arrow-down {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 7rem 0;
+    }
+    
+    .apresentation-title {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    
+    .apresentation-paragraph {
+        width: auto;
+        padding: 0 2rem ;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 1rem;
+    }
 }
