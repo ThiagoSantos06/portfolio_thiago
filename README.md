@@ -12,8 +12,7 @@
 
 ## 👨‍💻 Sobre o Projeto
 
-Este é meu portfólio pessoal, criado para apresentar quem eu sou, meus projetos, minhas habilidades e minha evolução como desenvolvedor front-end.  
-O foco é um site leve, bonito, responsivo e fácil de navegar.
+Este é meu portfólio pessoal, criado para apresentar quem eu sou, meus projetos, minhas habilidades e minha evolução como desenvolvedor front-end. O foco é um site leve, bonito, responsivo e fácil de navegar.
 
 ---
 
@@ -50,6 +49,26 @@ O layout foi desenvolvido para funcionar perfeitamente em:
 
 ## ▶️ Como Rodar o Projeto
 
+Primeiro, clone o repositório:
+
+```bash
+git clone https://github.com/ThiagoSantos06/portfolio_thiago.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd portfolio_thiago
+```
+
+Instale as dependências:
+
 ```bash
 npm install
-ng serve 
+```
+
+Execute o projeto:
+
+```bash
+ng serve
+```
