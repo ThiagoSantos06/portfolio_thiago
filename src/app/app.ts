@@ -6,10 +6,11 @@ import { AboutMe } from "./pages/about-me/about-me";
 import { Skills } from "./pages/skills/skills";
 import { Projects } from "./pages/projects/projects";
 import { Contact } from "./pages/contact/contact";
+import { Education } from "./pages/education/education";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, Intro, AboutMe, Skills, Projects, Contact],
+  imports: [Header, Footer, Intro, AboutMe, Skills, Projects, Contact, Education],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
