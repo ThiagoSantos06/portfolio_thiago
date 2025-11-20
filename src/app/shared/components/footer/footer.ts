@@ -11,6 +11,7 @@ export class Footer {
   projectsId = 'projects'
   skillsId = 'skills'
   aboutId = 'about'
+  educationId = 'education'
 
   scrollTo(link: string) {
     const section = document.getElementById(link);
