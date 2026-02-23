@@ -1,59 +1,74 @@
-# PortifolioThiago
+# 🚀 Thiago Henrique – Portfólio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+<div align="center">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/PrimeNG-0E7FC0?style=for-the-badge&logo=angular&logoColor=white" />
+</div>
 
-## Development server
+---
 
-To start a local development server, run:
+## 👨‍💻 Sobre o Projeto
+
+Este é meu portfólio pessoal, criado para apresentar quem eu sou, meus projetos, minhas habilidades e minha evolução como desenvolvedor front-end. O foco é um site leve, bonito, responsivo e fácil de navegar.
+
+---
+
+## ✨ Seções do Site
+
+- **🏠 Home** – apresentação principal  
+- **👤 Sobre mim** – trajetória e perfil profissional  
+- **🎓 Educação** – cursos e formação  
+- **⚙️ Habilidades** – stacks que utilizo  
+- **📁 Projetos** – cards dos meus principais projetos  
+- **📬 Contato** – links para redes sociais e email  
+
+---
+
+## 🔧 Tecnologias Utilizadas
+
+- **Angular**
+- **TypeScript**
+- **HTML5 & CSS3**
+- **PrimeNG e PrimeIcons**
+- **Responsividade com Flex/Grid**
+
+---
+
+## 📱 Responsividade
+
+O layout foi desenvolvido para funcionar perfeitamente em:
+- Smartphones  
+- Tablets  
+- Laptops  
+- Monitores grandes  
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+Primeiro, clone o repositório:
+
+```bash
+git clone https://github.com/ThiagoSantos06/portfolio_thiago.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd portfolio_thiago
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
 
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
