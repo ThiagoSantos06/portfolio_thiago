@@ -39,6 +39,16 @@ export class Projects {
       github: 'https://github.com/ThiagoSantos06/portfolio_thiago',
       site: 'https://portfolio-thiago-eta.vercel.app/',
       type: 'landingpage'
+    },
+    {
+      title: 'Caprix',
+      date: '2026',
+      description: 'Sua casa impecável no Rio e Niterói. A Caprix oferece faxinas profissionais com agendamento rápido, segurança e cuidado total em cada detalhe...',
+      tech: 'Angular, TypeScript, CSS3, HTML5',
+      image: 'assets/images/caprix.png',
+      github: 'https://github.com/ThiagoSantos06/caprix',
+      site: 'https://caprix-ivory.vercel.app/',
+      type: 'landingpage'
     }
   ]
 
