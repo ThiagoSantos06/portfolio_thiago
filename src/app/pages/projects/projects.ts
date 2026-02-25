@@ -1,50 +1,46 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../core/services/languageService';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
 export class Projects {
   selectedFilter: string = 'all';
 
+  constructor(public languageService: LanguageService) {}
+
   projectsList = [
     {
-      title: 'Imigração&Emoção',
+      key: 'project_1',
       date: '2024',
-      description: 'Plataforma de landing page para serviços de psicologia com agendamento de consultas...',
-      tech: 'Angular, TypeScript, HTML5, CSS3',
       image: 'assets/images/migracao&emocao.png',
       github: 'https://gitlab.com/bravit/clientes/migracao-e-emocao',
       site: 'https://migracao-e-emocao-wi.onrender.com/',
       type: 'landingpage'
     },
     {
-      title: 'Consulta de CEP',
+      key: 'project_2',
       date: '2024',
-      description: 'Site em Angular que consulta CEPs em tempo real usando a API AwesomeAPI...',
-      tech: 'Angular, TypeScript, CSS3, HTML5',
       image: 'assets/images/endereco.png',
       github: 'https://github.com/ThiagoSantos06/endereco',
       site: 'https://endereco-opyq18ify-thiagos-projects-fa762b1c.vercel.app/',
       type: 'webapp'
     },
     {
-      title: 'Portfólio',
+      key: 'project_3',
       date: '2025',
-      description: 'Site de portfólio pessoal desenvolvido em Angular e TypeScript...',
-      tech: 'Angular, TypeScript, CSS3, HTML5',
       image: 'assets/images/portfolio.png',
       github: 'https://github.com/ThiagoSantos06/portfolio_thiago',
       site: 'https://portfolio-thiago-eta.vercel.app/',
       type: 'landingpage'
     },
     {
-      title: 'Caprix',
+      key: 'project_4',
       date: '2026',
-      description: 'Sua casa impecável no Rio e Niterói. A Caprix oferece faxinas profissionais com agendamento rápido, segurança e cuidado total em cada detalhe...',
-      tech: 'Angular, TypeScript, CSS3, HTML5',
       image: 'assets/images/caprix.png',
       github: 'https://github.com/ThiagoSantos06/caprix',
       site: 'https://caprix-ivory.vercel.app/',

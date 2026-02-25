@@ -1,0 +1,143 @@
+{
+  "header": {
+    "start": "Inicio",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "studies": "Educação",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "intro": {
+    "presentation": "Olá, eu sou ",
+    "my_name": "Thiago",
+    "subtitle": "Desenvolvedor Front-end Angular apaixonado por criar experiências digitais incríveis",
+    "button_1": "Ver projetos",
+    "button_2": "Entrar em contato"
+  },
+  "about_me": {
+    "title_1": "Sobre ",
+    "title_2": "mim",
+    "paragraph_1": "Desenvolvedor Frontend Angular com 1+ anos de experiência na criação e implementação de aplicações web escaláveis, responsivas e de alto desempenho. Proficiente em Angular, TypeScript, RxJS, HTML5, CSS3 e JavaScript (ES6+), com um forte foco em arquitetura limpa, experiência do usuário (UX) e otimização de performance.",
+    "paragraph_2": "Ao longo da minha jornada, trabalhei em diversos projetos desafiadores, sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Acredito na importância de código limpo, boas práticas e trabalho em equipe.",
+    "paragraph_3": "Possuo inglês básico, o que me permite compreender documentação técnica, acompanhar tutoriais e estudar conteúdos internacionais para aprimorar continuamente minhas habilidades."
+  },
+  "my_skills": {
+    "title_1": "Minhas ",
+    "title_2": "Skills",
+    "cards": {
+      "angular": {
+        "title": "Angular",
+        "description": "Framework, Componentes, Pipes, Services"
+      },
+      "typescript": {
+        "title": "TypeScript & JavaScript",
+        "description": "ES6, objetos e integração com APIs"
+      },
+      "html_css": {
+        "title": "HTML & CSS",
+        "description": "HTML Semântico, Design Responsivo"
+      },
+      "ux": {
+        "title": "UI/UX Design",
+        "description": "Figma, Prototipagem, Design Systems"
+      },
+      "docker": {
+        "title": "Docker",
+        "description": "Containers, Deploy, Ambientes"
+      },
+      "git": {
+        "title": "Versionamento",
+        "description": "Git, GitHub, GitLab, Controle de versão"
+      }
+    }
+  },
+  "my_studies": {
+    "title_1": "Meus ",
+    "title_2": "Estudos",
+    "cards": {
+      "school": {
+        "title_school-course": "Técnico em Informática",
+        "school-name": "Instituto Federal do Rio de Janeiro - IFRJ",
+        "status-school": "Concluído",
+        "description-school": "Aprendizado em HTML, CSS, JavaScript, lógica de programação, desenvolvimento de sistemas e fundamentos de informática."
+      },
+      "certification_firjanSenai": {
+        "title_certification-course": "Certificação Programador Front-End",
+        "certification-name": "Firjan Senai Niterói",
+        "status-certification": "Jan 2025 - Mar 2025",
+        "description-certification": "Certificado de qualificação em desenvolvimento com HTML e CSS",
+        "code-description": "Código de Certificação: ",
+        "code-name": "QUA0300.01"
+      }
+    }
+  },
+  "my_projects": {
+    "title_1": "Meus ",
+    "title_2": "Projetos",
+    "filter": {
+      "all": "Todos",
+      "Web Apps": "Web Apps",
+      "Landing Pages": "Landing Pages"
+    },
+    "cards": {
+      "project_1": {
+        "title": "Imigração&Emoção",
+        "description": "Plataforma de landing page para serviços de psicologia com agendamento de consultas...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Código",
+        "button_2": "Website"
+      },
+      "project_2": {
+        "title": "Consulta de CEP",
+        "description": "Site em Angular que consulta CEPs em tempo real usando a API AwesomeAPI...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Código",
+        "button_2": "Website"
+      },
+      "project_3": {
+        "title": "Portfólio Pessoal",
+        "description": "Site de portfólio pessoal desenvolvido em Angular e TypeScript...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Código",
+        "button_2": "Website"
+      },
+      "project_4": {
+        "title": "Caprix",
+        "description": "Sua casa impecável no Rio e Niterói. A Caprix oferece faxinas profissionais com agendamento rápido, segurança e cuidado total em cada detalhe...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Código",
+        "button_2": "Website"
+      }
+    }
+  },
+  "contact": {
+    "title_1": "Fale ",
+    "title_2": "comigo",
+    "description": "Estou sempre aberto a novas oportunidades. Vamos conversar sobre como posso ajudar no seu próximo projeto!",
+    "card": {
+      "cv": {
+        "title": "Currículo",
+        "button": "Baixar"
+      }
+    }
+  },
+  "footer": {
+    "quick_links": {
+      "title": "Links Rápidos",
+      "links": {
+        "home": "Início",
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "education": "Educação",
+        "projects": "Projetos",
+        "contact": "Contato"
+      }
+    },
+    "contact_info": {
+      "title": "Contato & Redes",
+      "cv": "Baixar Currículo"
+    },
+    "translate": "Traduzir Página",
+    "rights": "© 2025 Todos os direitos reservados."
+  }
+}

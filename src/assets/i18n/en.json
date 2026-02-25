@@ -1,0 +1,142 @@
+{
+  "header": {
+    "start": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "studies": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "intro": {
+    "presentation": "Hello, I'm ",
+    "my_name": "Thiago",
+    "subtitle": "Angular front-end developer passionate about creating amazing digital experiences.",
+    "button_1": "View Projects",
+    "button_2": "Contact Me"
+  },
+  "about_me": {
+    "title_1": "About ",
+    "title_2": "me",
+    "paragraph_1": "Angular Frontend Developer with 1+ years of experience in creating and implementing scalable, responsive, and high-performance web applications. Proficient in Angular, TypeScript, RxJS, HTML5, CSS3, and JavaScript (ES6+), with a strong focus on clean architecture, user experience (UX), and performance optimization.",
+    "paragraph_2": "Throughout my journey, I have worked on several challenging projects, always seeking to learn new technologies and improve my skills. I believe in the importance of clean code, best practices, and teamwork.",
+    "paragraph_3": "I have basic English proficiency, which allows me to understand technical documentation, follow tutorials, and study international content to continuously improve my skills."
+  },
+  "my_skills": {
+    "title_1": "My ",
+    "title_2": "Skills",
+    "cards": {
+      "angular": {
+        "title": "Angular",
+        "description": "Framework, Components, Pipes, Services"
+      },
+      "typescript": {
+        "title": "TypeScript & JavaScript",
+        "description": "ES6, objects and API integration"
+      },
+      "html_css": {
+        "title": "HTML & CSS",
+        "description": "Semantic HTML, Responsive Design"
+      },
+      "ux": {
+        "title": "UI/UX Design",
+        "description": "Figma, Prototyping, Design Systems"
+      },
+      "docker": {
+        "title": "Docker",
+        "description": "Containers, Deployment, Environments"
+      },
+      "git": {
+        "title": "Versioning",
+        "description": "Git, GitHub, GitLab, Version control"
+      }
+    }
+  },
+  "my_studies": {
+    "title_1": "My ",
+    "title_2": "Studies",
+    "cards": {
+      "school": {
+        "title_school-course": "Computer Technician",
+        "school-name": "Instituto Federal do Rio de Janeiro - IFRJ",
+        "status-school": "Completed"
+      },
+      "certification_firjanSenai": {
+        "title_certification-course": "Front-End Developer Certification",
+        "certification-name": "Firjan Senai Niterói",
+        "status-certification": "Jan 2025 - Mar 2025",
+        "description-certification": "Qualification certificate in development with HTML and CSS",
+        "code-description": "Certification Code: ",
+        "code-name": "QUA0300.01"
+      }
+    }
+  },
+  "my_projects": {
+    "title_1": "My ",
+    "title_2": "Projects",
+    "filter": {
+      "all": "All",
+      "Web Apps": "Web Apps",
+      "Landing Pages": "Landing Pages"
+    },
+    "cards": {
+      "project_1": {
+        "title": "Imigração&Emoção",
+        "description": "Psychology services landing page platform featuring appointment scheduling...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Code",
+        "button_2": "Website"
+      },
+      "project_2": {
+        "title": "Zip Code Search",
+        "description": "Angular-based website for real-time zip code lookups using the AwesomeAPI...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Code",
+        "button_2": "Website"
+      },
+      "project_3": {
+        "title": "Personal Portfolio",
+        "description": "Personal portfolio website developed with Angular and TypeScript...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Code",
+        "button_2": "Website"
+      },
+      "project_4": {
+        "title": "Caprix",
+        "description": "Your spotless home in Rio and Niterói. Caprix offers professional cleaning services with fast booking, security, and total care in every detail...",
+        "technologies": "Angular, TypeScript, HTML5, CSS3",
+        "button_1": "Code",
+        "button_2": "Website"
+      }
+    }
+  },
+  "contact": {
+    "title_1": "Contact ",
+    "title_2": "Me",
+    "description": "I'm always open to new opportunities. Let's talk about how I can help with your next project!",
+    "card": {
+      "cv": {
+        "title": "Curriculum",
+        "button": "Download"
+      }
+    }
+  },
+  "footer": {
+    "quick_links": {
+      "title": "Quick Links",
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "education": "Education",
+        "projects": "Projects",
+        "contact": "Contact"
+      }
+    },
+    "contact_info": {
+      "title": "Contact & Networks",
+      "cv": "Download CV"
+    },
+    "translate": "Translate Page",
+    "rights": "© 2025 All rights reserved."
+  }
+}

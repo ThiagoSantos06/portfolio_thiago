@@ -1,26 +1,37 @@
 <footer>
     <div class="content-footer">
         <div class="content-links">
-            <h2 class="text-links">Links Rápidos</h2>
-            <a (click)="scrollTo(aboutId)" class="link-about">Sobre Mim</a>
-            <a (click)="scrollTo(skillsId)" class="link-skills">Habilidades</a>
-            <a (click)="scrollTo(educationId)" class="link-contact">Educação</a>
-            <a (click)="scrollTo(projectsId)" class="link-projects">Projetos</a>
-            <a (click)="scrollTo(contactId)" class="link-contact">contato</a>
+            <h2 class="text-links">{{'footer.quick_links.title' | translate}}</h2>
+            <a (click)="scrollToTop()" class="link-home">{{'header.start' | translate}}</a>
+            <a (click)="scrollTo(aboutId)" class="link-about">{{'header.about' | translate}}</a>
+            <a (click)="scrollTo(skillsId)" class="link-skills">{{'header.skills' | translate}}</a>
+            <a (click)="scrollTo(studiesId)" class="link-studies">{{'header.studies' | translate}}</a>
+            <a (click)="scrollTo(projectsId)" class="link-projects">{{'header.projects' | translate}}</a>
+            <a (click)="scrollTo(contactId)" class="link-contact">{{'header.contact' | translate}}</a>
         </div>
 
         <div class="content-contact">
-            <h2 class="text-contact">Contato & Redes</h2>
+            <h2 class="text-contact">{{'footer.contact_info.title' | translate}}</h2>
             <a href="mailto:thiagohenrique1983c@gmail.com" class="link-email" >thiagohenrique1983c@gmail.com</a>
-            <a href="https://www.linkedin.com/in/thiago-santos-29b5542b7/" target="_blank" class="link-linkedin">Linkedin</a>
+            <a href="https://www.linkedin.com/in/thiago-santos-29b5542b7/" target="_blank" class="link-linkedin">LinkedIn</a>
             <a href="https://github.com/ThiagoSantos06" target="_blank" class="link-github">GitHub</a>
-            <a href="" class="link-donwload-curriculum" href="assets/archives/curriculum.pdf" download="curriculum_Thiago">Baixar Currículo</a>
+            <a href="assets/archives/curriculum.pdf" class="link-download-curriculum" download="curriculum_Thiago">{{'footer.contact_info.cv' | translate}}</a>
+        </div>
+
+        <div class="content-language">
+            <h2 class="text-language">{{'footer.translate' | translate}}</h2>
+            <div class="container-language">
+                <div class="toggle-language">
+                    <div class="language-indicator" [class.move-right]="languageService.currentLanguage() === 'en'"></div>
+                    <span (click)="switchLanguage('pt')" [class.active-text]="languageService.currentLanguage() === 'pt'">PT</span>
+                    <span (click)="switchLanguage('en')" [class.active-text]="languageService.currentLanguage() === 'en'">EN</span>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="line-separation">
         <div class="line"></div>
-
-        <p class="rights-text">© 2025 Todos os direitos reservados.</p>
+        <p class="rights-text">{{'footer.rights' | translate}}</p>
     </div>
 </footer>

@@ -1,14 +1,38 @@
 <header [class.header-shadow]="isScrolled">
     <div class="content-header">
-        <h1 class="title-portfolio" (click)="scrollTo(introId)">Portfólio</h1>
-        <nav class="navbar">
+        <h1 class="title-portfolio" (click)="scrollToTop()">Portfólio</h1>
+
+        <div class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar" [class.active]="isMenuOpen">
             <ul class="list-navbar">
-                <li><a (click)="scrollTo(introId)">Início</a></li>
-                <li><a (click)="scrollTo(aboutId)">Sobre</a></li>
-                <li><a (click)="scrollTo(skillsId)">Skills</a></li>
-                <li><a (click)="scrollTo(projectsId)">Projetos</a></li>
-                <li><a (click)="scrollTo(contactId)">Contato</a></li>
+                <li><a (click)="scrollToTop()">{{ 'header.start' | translate }}</a></li>
+                <li><a (click)="scrollTo(aboutId)">{{ 'header.about' | translate }}</a></li>
+                <li><a (click)="scrollTo(skillsId)">{{ 'header.skills' | translate }}</a></li>
+                <li><a (click)="scrollTo(studiesId)">{{ 'header.studies' | translate }}</a></li>
+                <li><a (click)="scrollTo(projectsId)">{{ 'header.projects' | translate }}</a></li>
+                <li><a (click)="scrollTo(contactId)">{{ 'header.contact' | translate }}</a></li>
             </ul>
+
+            <div class="container-language mobile-only">
+                <div class="toggle-language">
+                    <div class="language-indicator" [class.move-right]="languageService.currentLanguage() === 'en'"></div>
+                    <span (click)="switchLanguage('pt')" [class.active-text]="languageService.currentLanguage() === 'pt'">PT</span>
+                    <span (click)="switchLanguage('en')" [class.active-text]="languageService.currentLanguage() === 'en'">EN</span>
+                </div>
+            </div>
         </nav>
+
+        <div class="container-language desktop-only">
+            <div class="toggle-language">
+                <div class="language-indicator" [class.move-right]="languageService.currentLanguage() === 'en'"></div>
+                <span (click)="switchLanguage('pt')" [class.active-text]="languageService.currentLanguage() === 'pt'">PT</span>
+                <span (click)="switchLanguage('en')" [class.active-text]="languageService.currentLanguage() === 'en'">EN</span>
+            </div>
+        </div>
     </div>
 </header>

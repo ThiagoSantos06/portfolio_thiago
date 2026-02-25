@@ -1,10 +1,10 @@
 <section [class.color-background]="isScrolled" id="intro">
     <div class="content-intro">
-        <h1 class="apresentation-title" data-aos="fade-up">Olá, eu sou <span>Thiago</span></h1>
-        <p class="apresentation-paragraph"  data-aos="fade-up">Desenvolvedor Front-end Angular apaixonado por criar experiências digitais incríveis</p>
+        <h1 class="apresentation-title" data-aos="fade-up">{{ 'intro.presentation' | translate }}<span>{{ 'intro.my_name' | translate }}</span></h1>
+        <p class="apresentation-paragraph" data-aos="fade-up">{{ 'intro.subtitle' | translate }}</p>
         <div class="buttons" data-aos="fade-up">
-            <a (click)="scrollTo(projectId)" class="button-project">Ver projetos</a>
-            <a (click)="scrollTo(contactId)" class="button-contact">Entrar em contato</a>
+            <a (click)="scrollTo(projectId)" class="button-project">{{ 'intro.button_1' | translate }}</a>
+            <a (click)="scrollTo(contactId)" class="button-contact">{{ 'intro.button_2' | translate }}</a>
         </div>
 
         <i class="pi pi-arrow-down" (click)="scrollTo(aboutId)" data-aos="fade-up"></i>

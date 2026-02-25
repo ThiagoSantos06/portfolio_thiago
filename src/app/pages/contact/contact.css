@@ -87,14 +87,16 @@ span {
 }
 
 .download-curriculum {
-    text-decoration: none;
+    display: flex;
     color: var(--color-1);
     font-weight: 500;
     transition: 0.2s;
+    width: fit-content;
 }
 
 .download-curriculum:hover {
     color: var(--color-5);
+    transform: translateY(-1px);
 }
 
 @media (max-width: 1024px) {

@@ -1,9 +1,11 @@
 import { Component, HostListener, AfterViewInit } from '@angular/core';
+import { LanguageService } from '../../core/services/languageService';
+import { TranslateModule } from '@ngx-translate/core';
 import AOS from 'aos';
 
 @Component({
   selector: 'app-intro',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './intro.html',
   styleUrl: './intro.css',
 })
@@ -12,6 +14,8 @@ export class Intro implements AfterViewInit {
   projectId = 'projects';
   contactId = 'contact';
   aboutId = 'about';
+
+  constructor(public languageService: LanguageService) {}
 
   ngAfterViewInit() {
     AOS.init({
