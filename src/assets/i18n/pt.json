@@ -65,9 +65,18 @@
         "title_certification-course": "Certificação Programador Front-End",
         "certification-name": "Firjan Senai Niterói",
         "status-certification": "Jan 2025 - Mar 2025",
-        "description-certification": "Certificado de qualificação em desenvolvimento com HTML e CSS",
+        "description-certification": "Certificado de qualificação em desenvolvimento com HTML e CSS.",
         "code-description": "Código de Certificação: ",
         "code-name": "QUA0300.01"
+      },
+      "faculty": {
+        "title-faculty": "Bacharelado em Engenharia de Software",
+        "faculty-name": "Anhanguera Pitágoras Ampli",
+        "status-faculty": "Fev 2026 - Jan 2030 (Previsto)",
+        "description-faculty": "Cursando Engenharia de Software com foco em desenvolvimento de sistemas, arquitetura de software e boas práticas.",
+        "code-description": "Código de Matrícula: ",
+        "code-name": "2026274546",
+        "status-current": "Cursando"
       }
     }
   },

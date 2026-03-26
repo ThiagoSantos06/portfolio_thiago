@@ -58,15 +58,25 @@
       "school": {
         "title_school-course": "Computer Technician",
         "school-name": "Instituto Federal do Rio de Janeiro - IFRJ",
-        "status-school": "Completed"
+        "status-school": "Completed",
+        "description-school": "Learning HTML, CSS, JavaScript, programming logic, systems development, and computer fundamentals."
       },
       "certification_firjanSenai": {
         "title_certification-course": "Front-End Developer Certification",
         "certification-name": "Firjan Senai Niterói",
         "status-certification": "Jan 2025 - Mar 2025",
-        "description-certification": "Qualification certificate in development with HTML and CSS",
+        "description-certification": "Qualification certificate in development with HTML and CSS.",
         "code-description": "Certification Code: ",
         "code-name": "QUA0300.01"
+      },
+      "faculty": {
+        "title-faculty": "Bachelor's Degree in Software Engineering",
+        "faculty-name": "Anhanguera Pitágoras Ampli",
+        "status-faculty": "Feb 2026 - Jan 2030 (Expected)",
+        "description-faculty": "Currently studying Software Engineering with a focus on system development, software architecture, and best practices.",
+        "code-description": "Enrollment Code: ",
+        "code-name": "2026274546",
+        "status-current": "In Progress"
       }
     }
   },
