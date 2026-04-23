@@ -19,7 +19,7 @@ export class Projects {
       date: '2024',
       image: 'assets/images/migracao&emocao.png',
       github: 'https://gitlab.com/bravit/clientes/migracao-e-emocao',
-      site: 'https://migracao-e-emocao-wi.onrender.com/',
+      site: 'https://migracaoeemocao.com/',
       type: 'landingpage'
     },
     {
