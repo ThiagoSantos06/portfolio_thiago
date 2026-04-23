@@ -1,5 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-10);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-5);
+}
 
 * {
     margin: 0;
