@@ -359,3 +359,26 @@ section {
         font-size: 0.75rem;
     }
 }
+
+.bento-grid {
+    transition: opacity 0.2s ease;
+}
+
+.bento-grid.fading-out {
+    opacity: 0.5;
+}
+
+.bento-item {
+    animation: fadeScale 0.5s ease-out backwards;
+}
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

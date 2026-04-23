@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../core/services/languageService';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -9,9 +10,9 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './projects.css',
 })
 export class Projects {
-  selectedFilter: string = 'all';
+  selectedFilter: string = 'all'
 
-  constructor(public languageService: LanguageService) {}
+  constructor(public languageService: LanguageService) { }
 
   projectsList = [
     {
@@ -48,15 +49,32 @@ export class Projects {
     }
   ]
 
-  filteredProjects = [...this.projectsList];
+  filteredProjects = [...this.projectsList]
 
-  filterProjects(type: string) {
-    this.selectedFilter = type;
-
-    if (type === 'all') {
-      this.filteredProjects = [...this.projectsList];
-    } else {
-      this.filteredProjects = this.projectsList.filter(project => project.type === type);
+filterProjects(type: string) {
+    if (this.selectedFilter === type) {
+        return;
     }
-  }
+    
+    this.selectedFilter = type;
+    
+    const grid = document.querySelector('.bento-grid');
+    if (grid) {
+        grid.classList.add('fading-out');
+    }
+    
+    setTimeout(() => {
+        if (type === 'all') {
+            this.filteredProjects = [...this.projectsList];
+        } else {
+            this.filteredProjects = this.projectsList.filter(project => project.type === type);
+        }
+        
+        setTimeout(() => {
+            if (grid) {
+                grid.classList.remove('fading-out');
+            }
+        }, 50);
+    }, 200);
+}
 }

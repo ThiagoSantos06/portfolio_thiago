@@ -14,7 +14,8 @@
 
     <div class="content-projects bento-grid">
         @for (project of filteredProjects; track project.key; let i = $index) {
-        <div class="container-project bento-item" [class.bento-large]="i === 0 || i === 3" [class.bento-wide]="i === 2">
+        <div class="container-project bento-item" [class.bento-large]="i === 0 || i === 3" [class.bento-wide]="i === 2"
+            [style.animation-delay]="(i * 0.1) + 's'">
             <div class="project-image-wrapper">
                 <img [src]="project.image" [alt]="project.key" class="project-image">
             </div>
