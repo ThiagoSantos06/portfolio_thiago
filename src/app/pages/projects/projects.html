@@ -1,27 +1,40 @@
 <section id="projects">
-    <h1 class="projects-title">{{'my_projects.title_1' | translate}} <span class="span-title">{{'my_projects.title_2' | translate}}</span></h1>
+    <h1 class="projects-title">{{'my_projects.title_1' | translate}} <span class="span-title">{{'my_projects.title_2' |
+            translate}}</span></h1>
 
     <div class="buttons-projects-types">
-        <button (click)="filterProjects('all')" class="button-list" [class.button-selected]="selectedFilter === 'all'">{{'my_projects.filter.all' | translate}}</button>
-        <button (click)="filterProjects('webapp')" class="button-list" [class.button-selected]="selectedFilter === 'webapp'">{{'my_projects.filter.Web Apps' | translate}}</button>
-        <button (click)="filterProjects('landingpage')" class="button-list" [class.button-selected]="selectedFilter === 'landingpage'">{{'my_projects.filter.Landing Pages' | translate}}</button>
+        <button (click)="filterProjects('all')" class="button-list"
+            [class.button-selected]="selectedFilter === 'all'">{{'my_projects.filter.all' | translate}}</button>
+        <button (click)="filterProjects('webapp')" class="button-list"
+            [class.button-selected]="selectedFilter === 'webapp'">{{'my_projects.filter.Web Apps' | translate}}</button>
+        <button (click)="filterProjects('landingpage')" class="button-list"
+            [class.button-selected]="selectedFilter === 'landingpage'">{{'my_projects.filter.Landing Pages' |
+            translate}}</button>
     </div>
 
-    <div class="content-projects">
-        @for (project of filteredProjects; track project.key) {
-            <div class="container-project">
+    <div class="content-projects bento-grid">
+        @for (project of filteredProjects; track project.key; let i = $index) {
+        <div class="container-project bento-item" [class.bento-large]="i === 0 || i === 3" [class.bento-wide]="i === 2">
+            <div class="project-image-wrapper">
                 <img [src]="project.image" [alt]="project.key" class="project-image">
-                <div class="project">
-                    <h2 class="project-text">{{('my_projects.cards.' + project.key + '.title') | translate}} <span class="span-date">{{ project.date }}</span></h2>
-                    <p class="project-paragraph">{{('my_projects.cards.' + project.key + '.description') | translate}}</p>
-                    <p class="project-paragraph">{{('my_projects.cards.' + project.key + '.technologies') | translate}}</p>
+            </div>
+            <div class="project">
+                <h2 class="project-text">{{('my_projects.cards.' + project.key + '.title') | translate}} <span
+                        class="span-date">{{ project.date }}</span></h2>
+                <p class="project-paragraph">{{('my_projects.cards.' + project.key + '.description') | translate}}</p>
+                <p class="project-paragraph technologies">{{('my_projects.cards.' + project.key + '.technologies') |
+                    translate}}</p>
 
-                    <div class="buttons">
-                        <a [href]="project.github" class="button-code" target="_blank"><i class="pi pi-github"></i>{{'my_projects.cards.' + project.key + '.button_1' | translate}}</a>
-                        <a [href]="project.site" class="button-site" target="_blank"><i class="pi pi-external-link"></i>{{'my_projects.cards.' + project.key + '.button_2' | translate}}</a>
-                    </div>
+                <div class="buttons">
+                    <a [href]="project.github" class="button-code" target="_blank"><i
+                            class="pi pi-github"></i>{{'my_projects.cards.' + project.key + '.button_1' |
+                        translate}}</a>
+                    <a [href]="project.site" class="button-site" target="_blank"><i
+                            class="pi pi-external-link"></i>{{'my_projects.cards.' + project.key + '.button_2' |
+                        translate}}</a>
                 </div>
             </div>
+        </div>
         }
     </div>
 </section>
